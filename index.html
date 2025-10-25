@@ -8,44 +8,39 @@
 </head>
 <body>
     <header class="site-header">
-        <h1>Minesweeper</h1>
+        <h1>💣 Minesweeper</h1>
         <div class="controls" role="group">
-            <div class="counter" title="mines left">010</div>
-            <button class="face" title="Reset"></button>
-            <div class="timer" title="timer">000</div>
+            <div class="counter" title="Mines remaining" aria-label="Mines remaining">010</div>
+            <button class="face" title="Reset game" aria-label="Reset game">:)</button>
+            <div class="timer" title="Elapsed time" aria-label="Elapsed time">000</div>
         </div>
     </header>
-    <nav class="sidebar" role="navigation">
-        <nav>
-            <a href="#" onclick="showRules()">Rules</a>
-        </nav>
-    </nav>
+    
     <main>
         <section class="board-wrap">
-            <nav class="difficulty">
+            <nav class="difficulty" aria-label="Difficulty selection">
                 <span>Difficulty:</span>
                 <div role="tablist">
-                    <button role="tab">Beginner</button>
-                    <button role="tab">Intermediate</button>
-                    <button role="tab">Expert</button>
+                    <button role="tab" aria-label="Beginner difficulty">Beginner</button>
+                    <button role="tab" aria-label="Intermediate difficulty">Intermediate</button>
+                    <button role="tab" aria-label="Expert difficulty">Expert</button>
                 </div>
             </nav>
-            <div id="board" class="board" role="grid"></div>
-            <div class="legend">
+            
+            <div id="board" class="board" role="grid" aria-label="Minesweeper game board"></div>
+            
+            <div class="legend" role="complementary" aria-label="Game legend">
                 <div class="chip"><span class="sw revealed"></span> Revealed</div>
                 <div class="chip"><span class="sw hidden"></span> Hidden</div>
                 <div class="chip"><span class="sw mine"></span> Mine</div>
-                <div class="layout">Layout: 9 × 9 • 10 mines</div>
+            </div>
+            
+            <div class="instructions">
+                <p><strong>How to play:</strong> Left-click to reveal • Right-click to flag</p>
             </div>
         </section>
-        <div class="rules" id="rules">
-            <h2>Game Rules</h2>
-            <p>Objective: Clear the board without detonating mines.</p>
-            <p>Click on a square to reveal it. If it’s a mine, you lose.</p>
-            <p>Numbers indicate how many mines are adjacent.</p>
-            <button onclick="hideRules()">Close</button>
-        </div>
-        <script src="app.js"></script>
     </main>
+
+    <script type="module" src="app.js"></script>
 </body>
 </html>
