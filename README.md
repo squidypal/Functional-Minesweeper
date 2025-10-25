@@ -1,4 +1,4 @@
-
+#### Github Link: https://github.com/squidypal/Functional-Minesweeper/tree/main
 
 
 ### PG29 Evelyn Intro to Programming in HTML5 & JavaScript A3
@@ -40,3 +40,11 @@
 --------
 - Simple click / right click a tile to play
 - To reset the game click the face in the top right
+
+### App caveats
+--------
+I have very limited JS knowledge, and find the language difficult to work with as someone with expierence in lower level languages.
+It was hard to get different scripts to work together, IE having gameEngine.js and app.js mix with many more scripts.
+I originally planned on splitting up the scripts into much smaller scripts, but I struggled with the task because it would cause de-bugging my already messy code even harder.
+
+I wish I added images and had a more comprehensive style to the app, rather than the very modern style I went to, but i'm happy with what I managed to get done considering how I feel about JavaScript.
